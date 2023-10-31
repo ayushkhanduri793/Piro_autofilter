@@ -29,7 +29,7 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 BOT_START_TIME = time()
 
 # Bot images & videos
-PICS = (environ.get('PICS', 'https://telegra.ph/file/5553dc39f968b364d4856.jpg')).split()
+PICS = (environ.get('PICS', 'https://telegra.ph/file/4450c7c8a397856cbc0d2.jpg https://telegra.ph/file/72f546d34d9aa825b9dec.jpg https://telegra.ph/file/2e3ef4779d153d6eac5be.jpg https://telegra.ph/file/bf2d9ecb8c06464e70e56.jpg https://telegra.ph/file/1e3a15ca6f9c38a728a3e.jpg https://telegra.ph/file/8601a64b75ed9202a6fdc.jpg https://telegra.ph/file/b847453762e656c1b84e5.jpg https://telegra.ph/file/ef06c9d5b78766dfc40cb.jpg https://telegra.ph/file/de3f6cff2b7f1d5df526b.jpg https://telegra.ph/file/1c0c8df531fcec1a2a7ce.jpg https://telegra.ph/file/42ae6ccf371896e19fbb2.jpg https://telegra.ph/file/5b3b62b68e9e75857b357.jpg https://telegra.ph/file/f98a3eb8a3ce0dc6c37c1.jpg')).split()
 REQ_PICS = (environ.get('REQ_PICS', 'https://graph.org/file/5cb80fa6096997b7226b3.jpg')).split()
 NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/0593a3103ba1b9a5855bf.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/72dff2b65352ba85d0a34.mp4")
@@ -45,7 +45,7 @@ auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 support_chat_id = environ.get('SUPPORT_CHAT_ID')
-reqst_channel = environ.get('REQST_CHANNEL_ID', -1002048270121)
+reqst_channel = environ.get('REQST_CHANNEL_ID', "-1002048270121")
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = -1001832788030
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
