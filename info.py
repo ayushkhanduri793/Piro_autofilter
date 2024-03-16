@@ -48,7 +48,7 @@ support_chat_id = environ.get('SUPPORT_CHAT_ID')
 reqst_channel = environ.get('REQST_CHANNEL_ID')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 JOIN_REQS_DB = environ.get("JOIN_REQS_DB", "mongodb+srv://ayushkhanduri74:Master793@master793.rsgbszd.mongodb.net/?retryWrites=true&w=majority")
-SUPPORT_CHAT_ID = -1002079354717
+SUPPORT_CHAT_ID = -1002017750273
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True))
 
 # MongoDB information
